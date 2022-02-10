@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Primary */
+
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+
+  --blue-main: hsl(217, 54%, 11%);
+  --blue-card: hsl(216, 50%, 16%);
+  --blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--blue-main);
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+
+  display: grid;
+  place-items: center;
+  color: var(--white);
+}
+
+h1 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+hr {
+  border: 1px solid var(--blue-line);
+  height: min-content;
+  align-self: center;
+}
+
+.card {
+  height: 37.5rem;
+  width: 21.875rem;
+  background-color: var(--blue-card);
+  border-radius: 15px;
+  padding: 1.5rem;
+
+  display: grid;
+}
+
+.nft-image-frame {
+  width: 18.875rem;
+  height: 18.875rem;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: flex;
+}
+
+.nft-image-frame > img,
+.creator-box--avatar-image-frame > img {
+  width: 100%;
+}
+
+.statistics-box,
+.statistics-box > div {
+  display: flex;
+}
+
+.statistics-box {
+  justify-content: space-between;
+}
+
+.statistics-box > div {
+  align-items: center;
+}
+
+.statistics-box--icon-frame {
+  margin-right: 0.5rem;
+
+  display: flex;
+  width: max-content;
+  height: max-content;
+}
+
+.statistics-box--currency > p {
+  font-weight: 600;
+  color: var(--cyan);
+}
+
+.creator-box {
+  display: flex;
+  align-items: center;
+}
+
+.creator-box--avatar-image-frame {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.creator-box--avatar-image-frame > img {
+  border: 1px solid var(--white);
+  border-radius: 50px;
+}
+
+.card > p,
+.statistics-box--days-left > p,
+.creator-box > p {
+  color: var(--soft-blue);
+}
+
+span {
+  color: var(--white);
+}
+
+span:hover,
+h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
