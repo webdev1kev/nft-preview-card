@@ -133,10 +133,10 @@ h1:hover {
   height: 100%;
 
   background-color: hsla(178, 100%, 50%, 0.521);
-  visibility: hidden;
 
   display: grid;
   place-items: center;
+  visibility: hidden;
 }
 
 .nft-image-frame:hover .eye-icon-frame {
